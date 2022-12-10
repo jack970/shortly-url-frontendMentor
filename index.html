@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Menu -->
+    <header>
+      <div class="header-menu">
+        <img src="./images/logo.svg" alt="logo" />
+        <!-- Navigation links (hidden by default) -->
+        <div class="menu hidden-menu" id="menu">
+          <ul class="submenu">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+          <ul class="submenu">
+            <li><a href="#">Login</a></li>
+            <li><a class="sign" href="#">Sign Up</a></li>
+          </ul>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <div onclick="ativa_menu_dropdown()" class="menu-dropdown">
+          <div class="line-dp"></div>
+          <div class="line-dp"></div>
+          <div class="line-dp"></div>
+        </div>
+      </div>
+    </header>
+    <section id="hero">
+      <div class="hero-content">
+        <div class="texto">
+          <h1>More than just shorter links</h1>
+          <h3>
+            Build your brand’s recognition and get detailed insights on how your
+            links are performing.
+          </h3>
+          <a class="sign" href="#">Get Started</a>
+        </div>
+      </div>
+      <img src="./images/illustration-working.svg" alt="illustration-working" />
+    </section>
+    <section id="input-background">
+      <div id="input">
+        <form onsubmit="onSubmit(event)">
+          <div>
+            <input
+              type="text"
+              name="shortLink"
+              placeholder="Shorten a link here..."
+              autocomplete="off"
+            />
+            <p id="message"></p>
+          </div>
+          <button class="sign" type="submit">Shorten It!</button>
+        </form>
+        <div class="results"></div>
+      </div>
+    </section>
+    <section id="statistics">
+      <div class="statistics-header">
+        <h2>Advanced Statistics</h2>
+        <p>
+          Track how your links are performing across the web with our advanced
+          statistics dashboard.
+        </p>
+      </div>
+      <div class="statistics-content">
+        <div class="statistics-card">
+          <img
+            src="./images/icon-brand-recognition.svg"
+            alt="icon-brand-recognition"
+          />
+          <h3>Brand Recognition</h3>
+          <p>
+            Boost your brand recognition with each click. Generic links don’t
+            mean a thing. Branded links help instil confidence in your content.
+          </p>
+        </div>
+        <div class="statistics-card m-t5">
+          <img
+            src="./images/icon-detailed-records.svg"
+            alt="icon-detailed-records"
+          />
+          <h3>Detailed Records</h3>
+          <p>
+            Gain insights into who is clicking your links. Knowing when and
+            where people engage with your content helps inform better decisions.
+          </p>
+        </div>
+        <div class="statistics-card m-t10">
+          <img
+            src="./images/icon-fully-customizable.svg"
+            alt="icon-fully-customizable"
+          />
+          <h3>Fully Customizable</h3>
+          <p>
+            Improve brand awareness and content discoverability through
+            customizable links, supercharging audience engagement.
+          </p>
+        </div>
+        <div class="line"></div>
+      </div>
+    </section>
+    <section id="get-started">
+      <h2>Boost your links today</h2>
+      <button class="sign" type="button">Get Started</button>
+    </section>
+    <footer>
+      <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
+      <nav>
+        <ul>
+          <p>Features</p>
+          <li><a href="">Link Shortening </a></li>
+          <li><a href="">Branded Links</a></li>
+          <li><a href="">Analytics</a></li>
+        </ul>
+        <ul>
+          <p>Resources</p>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Developers</a></li>
+          <li><a href="">Support </a></li>
+        </ul>
+        <ul>
+          <p>Company</p>
+          <li><a href="">About</a></li>
+          <li><a href="">Our Team</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <a href="#"
+          ><img src="./images/icon-facebook.svg" alt="icon-facebook"
+        /></a>
+        <a href="#"
+          ><img src="./images/icon-twitter.svg" alt="icon-twitter"
+        /></a>
+        <a href="#"
+          ><img src="./images/icon-pinterest.svg" alt="icon-pinterest"
+        /></a>
+        <a href="#"
+          ><img src="./images/icon-instagram.svg" alt="icon-instagram"
+        /></a>
+      </div>
+    </footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Jack970</a>.
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
